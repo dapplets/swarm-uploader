@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import * as ethers from 'ethers';
 import abi from './abi.json';
 
