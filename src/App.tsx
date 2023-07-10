@@ -39,7 +39,7 @@ class App extends React.Component<P, S> {
 
     const chunks = Math.ceil(size / 4096);
     let depth = Math.ceil(Math.log2(chunks));
-    if (depth < 17) depth = 20;
+    if (depth < 20) depth = 20;
 
     const provider = new ethers.providers.JsonRpcProvider('https://goerli.mooo.com/', 5);
     const contract = new ethers.Contract('0x621e455c4a139f5c4e4a8122ce55dc21630769e4', abi, provider);
